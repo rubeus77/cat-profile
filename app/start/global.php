@@ -1,4 +1,9 @@
 <?php
+/*wychwytywanie nie istniejących scieżek*/
+
+App::missing(function($exception){
+	return Response::make("Strony nie znaleziono", 404);
+	});
 
 /*
 |--------------------------------------------------------------------------
