@@ -1,6 +1,13 @@
 <?php
+	/* dodane żeby się nie czepiał. chodzi o uruchomienie Laravel 4.2 pod PHP 7.*
+	inaczej należałoby mieć PHP 5.4.*
+	*/
+	error_reporting(E_ALL ^ E_DEPRECATED);
 
+	
 return array(
+
+
 
 	/*
 	|--------------------------------------------------------------------------
@@ -13,7 +20,7 @@ return array(
 	|
 	*/
 
-	'debug' => false,
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------

@@ -13,5 +13,9 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return "Wszystkie koty.";
+});
+Route::get('cats/{id}', function($id)
+{
+	return "Kot #$id";
 });
