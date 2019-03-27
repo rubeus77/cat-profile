@@ -1,3 +1,4 @@
+<?php
 /* tworzymy klasę a zarazem strukturę tabeli "cats" w bazie danych, która jest rozszerzeniem klasy Eloquent */ 
 
 class Cat extends Eloquent {
