@@ -13,9 +13,19 @@
 
 Route::get('/', function()
 {
-	return "Wszystkie koty.";
+	// return "Wszystkie koty."; - stworzenie przekierowania do "/cats"
+	return Redirect::to('cats');
 });
+
+Route::get('cats', function(){
+	return "wszystkie koty";
+});
+
 Route::get('cats/{id}', function($id)
 {
 	return "Kot #$id";
 })->where('id','[1-9]+');
+//wywołanie widoku zawartego w pliku "app/views/about.php"
+Route::get('about', function(){
+	return View::make('about')->with('number_of_cats', 9000);
+});

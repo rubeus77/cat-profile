@@ -26,7 +26,8 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	/*zmiana wartości z "mysql" na "sqlite" dla celów projektu z kotami. domyślnie będzie 'mysql' bo z niego będziemy korzystać*/
+	'default' => 'sqlite',
 
 	/*
 	|--------------------------------------------------------------------------
